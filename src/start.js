@@ -2,12 +2,14 @@ import Footer from "./js/Footer";
 import Navbar from "./js/Navbar";
 import { setupCounter } from "./js/counter"
 import { ES10 } from "./js/es10";
+import Rows from "./js/row";
 import styles from './sass/modules/app.module.scss'
 
 export default function Start(DOM) {
     // Function here
     let APP,
         Nav,
+        Row,
         Foot;
 
     ES10();
@@ -25,7 +27,11 @@ export default function Start(DOM) {
             <div>
                 <button class=${styles['button-style']} id='count'></button>
             </div>
+            <div  class=${styles['d-flex-gap-20']} id="rows"></div>
+            <footer class=${styles['footer-abs-between']} id="footer"></footer>
         </div>
+
+        
         `
     )
 
@@ -39,6 +45,9 @@ export default function Start(DOM) {
     // Nav = document.getElementById('navbar');
     // Navbar(Nav);
 
-    // Foot = document.getElementById('footer');
-    // Footer(Foot);
+    Row = document.getElementById('rows');
+    Rows(Row);
+
+    Foot = document.getElementById('footer');
+    Footer(Foot);
 }
