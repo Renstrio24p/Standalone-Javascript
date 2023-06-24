@@ -1,12 +1,12 @@
+import styles from '../sass/modules/app.module.scss';
 
 export default function Footer(Footer){
 
-    function Minus(a,b){
-        return a - b;
-    }
-
     Footer.innerHTML = `
-        <h2>This is a footer has been Rendered by ES10.</h2>
-        <span>&copy; ES10 2023 ${Minus(5,4)}</span>
+        <span>Version 1.0.2</span>
+        <div class=${styles['d-flex-between']}>
+            <img class=${styles['github_img']} src='./src/images/github.png' alt='github' />
+            <span>Codespaces</span>
+        </div>
     `
 }
