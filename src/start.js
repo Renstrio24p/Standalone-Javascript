@@ -11,9 +11,11 @@ export default function Start(DOM) {
         Foot;
 
     ES10();
-    
+
+
     DOM.innerHTML = (
         `
+        <?php echo 'PHP in Javascript' ?>
         <div class=${styles['d-flex-center-max']}>
             <div class=${styles['d-flex-center-gap-20']}>
                 <a href="https://javascript.info/"><img class=${styles['js-image']} src='./src/images/javascript.png' alt='javascript logo'/></a>
@@ -26,6 +28,7 @@ export default function Start(DOM) {
         </div>
         `
     )
+
     /*
         this field goes to render an element from a funtion
     */
