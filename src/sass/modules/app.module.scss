@@ -23,7 +23,8 @@
 }
 
 .js-image:hover,
-.webpack-image:hover {
+.webpack-image:hover,
+.sass_img:hover {
     filter: drop-shadow(0 0 2em #e7f700fb);
 
 }
@@ -34,6 +35,11 @@
 
 .webpack-image {
 	width: 20vh;
+}
+
+.sass_img {
+	width: 10vh;
+	padding: 10px;
 }
 
 .d-flex-center-max,
