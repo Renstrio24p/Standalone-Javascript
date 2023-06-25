@@ -1,7 +1,7 @@
 import Footer from "../js/Footer";
 import { setupCounter } from "../js/counter";
 import Rows from "../js/row";
-import { Hashed } from "./HashCode";
+import UniqueHash from "./HashCode";
 
 export default function Render() {
     // Get Render's ID
@@ -12,10 +12,10 @@ export default function Render() {
 
     // Hash Applied
     window.addEventListener('DOMContentLoaded', () => {
-        ContainerDOM.id = Hashed;
-        APP.id = Hashed;
-        Row.id = Hashed;
-        Foot.id = Hashed;
+        ContainerDOM.id = UniqueHash();
+        APP.id = UniqueHash();
+        Row.id = UniqueHash();
+        Foot.id = UniqueHash();
     })
 
     // Render's the JS Component

@@ -1,7 +1,7 @@
 import Start from "./start";
 import './sass/index.scss';
-import { Hashed } from "./security/HashCode";
+import UniqueHash from "./security/HashCode";
 
 const DOM = document.querySelector('#root');
-DOM.id = Hashed;
+DOM.id = UniqueHash();
 Start(DOM); // Renders the Element ID
