@@ -1,4 +1,4 @@
-﻿# Standalone-JavascriptES10
+![image](https://github.com/Renstrio24p/Standalone-JavascriptES10/assets/123795328/45f3a25f-9489-4498-8b97-e910ac18ae3a)﻿# Standalone-JavascriptES10
 
 ## Pure Vanilla Javascript ECMAScript 10
 
@@ -15,16 +15,9 @@ Web Security
   - No Caches Policy
 
      - Example code: Start.js
-        `
-         export default function Start(DOM) {
-             DOM.innerHTML = (
-               `
-                 <h1>Hello World </h1>
-               `
-             )   
-         }
-
-       `
+        
+        
+       
 
      - in index.js
 
