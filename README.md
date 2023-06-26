@@ -14,6 +14,8 @@ Web Security
   - No Caches Policy
 
 
+
+
     - Start.js
         
 ![image](https://github.com/Renstrio24p/Standalone-JavascriptES10/assets/123795328/45f3a25f-9489-4498-8b97-e910ac18ae3a)﻿# Standalone-JavascriptES10
