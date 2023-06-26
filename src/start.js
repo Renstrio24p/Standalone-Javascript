@@ -9,7 +9,7 @@ export default function Start(DOM) {
     // Function here
     
     ES10();
-
+ 
     DOM.innerHTML = (
         `
         <div id='container' class=${cx('d-flex-center-max')}>
@@ -19,17 +19,13 @@ export default function Start(DOM) {
                 <img 
                     class=${cx('js-image')} 
                     src='./src/images/javascript.png' 
-                    alt='javascript logo'
-                    width="100"
-                    height="100"    
+                    alt='javascript logo'   
                 /></a>
                 <h1 class=${cx('font-weight-400')}>Standalone - Javascript ES10</h1>
                 <a href="https://webpack.js.org/">
                     <img class=${cx('webpack-image')} 
                          src='./src/images/webpack.png' 
                          alt='webpack logo'
-                         width="150"
-                         height="150"  
                     /></a>
             </div>
             <div>
