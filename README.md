@@ -14,6 +14,27 @@ Web Security
   - Add Hashing Generator to Hide the Actual id
   - No Caches Policy
 
+     - Example code: Start.js
+
+         export default function Start(DOM) {
+             DOM.innerHTML = (
+               `
+                 <h1>Hello World </h1>
+               `
+             )   
+         }
+
+     - in index.js
+
+        import Start from './Start'
+        import UniqueHash from './security/HashCode'
+       
+        const DOM = document.querySelector('#app')
+        DOM.id = UniqueHash();
+        Start(DOM); // Renders the components like JSX in react.
+
+        
+
 
 
 
