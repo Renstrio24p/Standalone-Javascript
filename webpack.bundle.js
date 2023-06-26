@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _start__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./start */ \"./src/start.js\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/index.scss */ \"./src/sass/index.scss\");\n/* harmony import */ var _security_HashCode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./security/HashCode */ \"./src/security/HashCode.js\");\n\n\n\nvar DOM = document.querySelector('#dom');\nDOM.id = (0,_security_HashCode__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_start__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(DOM); // Renders the Element ID\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _start__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./start */ \"./src/start.js\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/index.scss */ \"./src/sass/index.scss\");\n/* harmony import */ var _security_HashCode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./security/HashCode */ \"./src/security/HashCode.js\");\n\n\n\nvar DOM = document.querySelector('#app');\nDOM.id = (0,_security_HashCode__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_start__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(DOM); // Renders the Element ID\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/index.js?");
 
 /***/ }),
 
