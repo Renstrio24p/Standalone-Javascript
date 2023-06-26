@@ -1,12 +1,15 @@
+import { cx } from '../start';
 
 export default function Footer(Footer){
 
-    function Minus(a,b){
-        return a - b;
-    }
-
     Footer.innerHTML = `
-        <h2>This is a footer has been Rendered by ES10.</h2>
-        <span>&copy; ES10 2023 ${Minus(5,4)}</span>
+        <div class=${cx('d-flex-between')}>
+            <span>Version 1.0.3</span>
+            <img class=${cx('sass_img')} src='./src/images/sass.png' alt='sass logo' />
+        </div>
+        <div class=${cx('d-flex-between')}>
+            <img class=${cx('github_img')} src='./src/images/github.png' alt='github' />
+            <span>Codespaces</span>
+        </div>
     `
 }

@@ -1,8 +1,13 @@
 
+* {
+	user-select: none;
+}
+
 .d-flex-between {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+	align-items: center;
+    padding: 10px;
 }
 
 .d-flex-gap-10 {
@@ -15,12 +20,30 @@
     font-size: 10px;
 }
 
+.js-image,
+.webpack-image {
+	will-change: filter;
+    transition: filter 300ms;
+}
+
+.js-image:hover,
+.webpack-image:hover,
+.sass_img:hover {
+    filter: drop-shadow(0 0 2em #e7f700fb);
+
+}
+
 .js-image {
 	width: 10vh;
 }
 
 .webpack-image {
 	width: 20vh;
+}
+
+.sass_img {
+	width: 10vh;
+	padding: 10px;
 }
 
 .d-flex-center-max,
@@ -37,7 +60,7 @@
 	background: radial-gradient(
 		circle,
 		rgba(255, 255, 255, 1) 0%,
-		rgba(55, 57, 9, 1) 0%,
+		rgb(32, 32, 7) 0%,
 		rgba(234, 255, 0, 1) 95%
 	);
     flex-direction: column;
@@ -56,4 +79,30 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.footer-abs-between {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.github_img {
+	width: 20vh;
+}
+
+.d-flex-gap-20 {
+	display: flex;
+	gap: 20px;
+	padding: 30px;
+}
+
+.box {
+	background-color: gray;
+	padding: 10px;
+	border-radius: 5px;
 }
