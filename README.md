@@ -1,4 +1,3 @@
-![image](https://github.com/Renstrio24p/Standalone-JavascriptES10/assets/123795328/45f3a25f-9489-4498-8b97-e910ac18ae3a)﻿# Standalone-JavascriptES10
 
 ## Pure Vanilla Javascript ECMAScript 10
 
@@ -16,17 +15,15 @@ Web Security
 
      - Example code: Start.js
         
+![image](https://github.com/Renstrio24p/Standalone-JavascriptES10/assets/123795328/45f3a25f-9489-4498-8b97-e910ac18ae3a)﻿# Standalone-JavascriptES10
         
        
 
      - in index.js
 
-        import Start from './Start'
-        import UniqueHash from './security/HashCode'
-       
-        const DOM = document.querySelector('#app')
-        DOM.id = UniqueHash();
-        Start(DOM); // Renders the components like JSX in react.
+![image](https://github.com/Renstrio24p/Standalone-JavascriptES10/assets/123795328/423c9c1a-bb77-4528-bf90-cb714d98bf53)
+
+    
 
         
 
