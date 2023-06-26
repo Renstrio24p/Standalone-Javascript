@@ -15,7 +15,7 @@ Web Security
   - No Caches Policy
 
      - Example code: Start.js
-
+        `
          export default function Start(DOM) {
              DOM.innerHTML = (
                `
@@ -23,6 +23,8 @@ Web Security
                `
              )   
          }
+
+       `
 
      - in index.js
 
