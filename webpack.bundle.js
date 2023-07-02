@@ -9,94 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _start__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./start */ \"./src/start.js\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/index.scss */ \"./src/sass/index.scss\");\n/* harmony import */ var _security_HashCode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./security/HashCode */ \"./src/security/HashCode.js\");\n\n\n\nvar DOM = document.querySelector('#app');\nDOM.id = (0,_security_HashCode__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_start__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(DOM); // Renders the Element ID\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/js/Footer.js":
-/*!**************************!*\
-  !*** ./src/js/Footer.js ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var _start__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../start */ \"./src/start.js\");\n\nfunction Footer(Footer) {\n  Footer.innerHTML = \"\\n        <div class=\".concat((0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('d-flex-between'), \">\\n            <span>Version 1.0.3</span>\\n            <img class=\").concat((0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('sass_img'), \" src='./src/images/sass.png' alt='sass logo' />\\n        </div>\\n        <div class=\").concat((0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('d-flex-between'), \">\\n            <img class=\").concat((0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('github_img'), \" src='./src/images/github.png' alt='github' />\\n            <span>Codespaces</span>\\n        </div>\\n    \");\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/Footer.js?");
-
-/***/ }),
-
-/***/ "./src/js/counter.js":
-/*!***************************!*\
-  !*** ./src/js/counter.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   setupCounter: () => (/* binding */ setupCounter)\n/* harmony export */ });\nfunction setupCounter(element) {\n  var counter = 0;\n  var setCounter = function setCounter(count) {\n    counter = count;\n    element.innerHTML = \"count is \".concat(counter);\n  };\n  element.addEventListener('click', function () {\n    return setCounter(counter + 1);\n  });\n  setCounter(0);\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/counter.js?");
-
-/***/ }),
-
-/***/ "./src/js/es10.js":
-/*!************************!*\
-  !*** ./src/js/es10.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ES10: () => (/* binding */ ES10)\n/* harmony export */ });\nfunction ES10() {\n  // Array.prototype.flat();\n  var arr = [1, [2, 3], [4, [5]]];\n  var flattened = arr.flat();\n  console.log(flattened); // Output: [1, 2, 3, 4, 5]\n\n  // Object.fromEntries();\n  var entries = [['name', 'John'], ['age', 30], ['city', 'New York']];\n  var obj = Object.fromEntries(entries);\n  console.log(obj); // Output: { name: 'John', age: 30, city: 'New York' }\n\n  /* using Dynamic Imports\n       async function loadModule(moduleName) {\n          const module = await import(moduleName);\n          module.someFunction();\n          }\n      loadModule('./myModule.js'); \n  */\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/es10.js?");
-
-/***/ }),
-
-/***/ "./src/js/row.js":
-/*!***********************!*\
-  !*** ./src/js/row.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Rows)\n/* harmony export */ });\n/* harmony import */ var _sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/modules/app.module.scss */ \"./src/sass/modules/app.module.scss\");\n\nfunction Rows(rows) {\n  rows.innerHTML = \"\\n        <div class=\".concat(_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].box, \">\\n            <p>supports ES6+</p>\\n        </div>\\n        <div class=\").concat(_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].box, \">\\n            <p>Modular SCSS</p>\\n        </div>\\n        <div class=\").concat(_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].box, \">\\n            <p>Web Security Features</p>\\n        </div>\\n    \");\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/row.js?");
-
-/***/ }),
-
-/***/ "./src/security/HashCode.js":
-/*!**********************************!*\
-  !*** ./src/security/HashCode.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ UniqueHash)\n/* harmony export */ });\nvar GenerateHashes = new Set();\nfunction UniqueHash() {\n  var hash;\n  do {\n    hash = Math.random().toString(36).substring(2);\n  } while (GenerateHashes.has(hash));\n  GenerateHashes.add(hash);\n  return hash;\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/security/HashCode.js?");
-
-/***/ }),
-
-/***/ "./src/security/Render.js":
-/*!********************************!*\
-  !*** ./src/security/Render.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Render)\n/* harmony export */ });\n/* harmony import */ var _js_Footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/Footer */ \"./src/js/Footer.js\");\n/* harmony import */ var _js_counter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/counter */ \"./src/js/counter.js\");\n/* harmony import */ var _js_row__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../js/row */ \"./src/js/row.js\");\n/* harmony import */ var _HashCode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HashCode */ \"./src/security/HashCode.js\");\n\n\n\n\nfunction Render() {\n  // Get Render's ID\n  var ContainerDOM = document.getElementById('container');\n  var APP = document.getElementById('count');\n  var Row = document.getElementById('rows');\n  var Foot = document.getElementById('footer');\n\n  // Hash Applied\n  window.addEventListener('DOMContentLoaded', function () {\n    ContainerDOM.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    APP.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    Row.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    Foot.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  });\n\n  // Render's the JS Component\n  (0,_js_counter__WEBPACK_IMPORTED_MODULE_1__.setupCounter)(APP);\n  (0,_js_row__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(Row);\n  (0,_js_Footer__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(Foot);\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/security/Render.js?");
-
-/***/ }),
-
-/***/ "./src/start.js":
-/*!**********************!*\
-  !*** ./src/start.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   cx: () => (/* binding */ cx),\n/* harmony export */   \"default\": () => (/* binding */ Start)\n/* harmony export */ });\n/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames/bind */ \"./node_modules/classnames/bind.js\");\n/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames_bind__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_es10__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/es10 */ \"./src/js/es10.js\");\n/* harmony import */ var _sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sass/modules/app.module.scss */ \"./src/sass/modules/app.module.scss\");\n/* harmony import */ var _security_Render__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./security/Render */ \"./src/security/Render.js\");\n\n\n\n\nvar cx = classnames_bind__WEBPACK_IMPORTED_MODULE_0___default().bind(_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\nfunction Start(DOM) {\n  // Function here\n\n  (0,_js_es10__WEBPACK_IMPORTED_MODULE_1__.ES10)();\n  DOM.innerHTML = \"\\n        <div id='container' class=\".concat(cx('d-flex-center-max'), \">\\n\\n            <div class=\").concat(cx('d-flex-center-gap-20'), \">\\n                <a href=\\\"https://javascript.info/\\\">\\n                <img \\n                    class=\").concat(cx('js-image'), \" \\n                    src='./src/images/javascript.png' \\n                    alt='javascript logo'   \\n                /></a>\\n                <h1 class=\").concat(cx('font-weight-400'), \">Standalone - Javascript ES10</h1>\\n                <a href=\\\"https://webpack.js.org/\\\">\\n                    <img class=\").concat(cx('webpack-image'), \" \\n                         src='./src/images/webpack.png' \\n                         alt='webpack logo'\\n                    /></a>\\n            </div>\\n            <div>\\n                <button class=\").concat(cx('button-style'), \" id='count'></button>\\n            </div>\\n            <div  class=\").concat(cx('d-flex-gap-20'), \" id=\\\"rows\\\"></div>\\n            <footer class=\").concat(cx('footer-abs-between'), \" id=\\\"footer\\\"></footer>\\n        \\n        </div>\\n\\n        \");\n  (0,_security_Render__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(); // Renders all the Element ID's\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/start.js?");
-
-/***/ }),
-
 /***/ "./node_modules/classnames/bind.js":
 /*!*****************************************!*\
   !*** ./node_modules/classnames/bind.js ***!
@@ -236,6 +148,94 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 "use strict";
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://standalone-javascript-beta/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _start__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./start */ \"./src/start.js\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/index.scss */ \"./src/sass/index.scss\");\n/* harmony import */ var _security_HashCode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./security/HashCode */ \"./src/security/HashCode.js\");\n\n\n\n\n\nconst DOM = document.querySelector('#app');\nDOM.id = (0,_security_HashCode__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_start__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(DOM); // Renders the Element ID\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/Footer.js":
+/*!**************************!*\
+  !*** ./src/js/Footer.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Footer)\n/* harmony export */ });\n/* harmony import */ var _start__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../start */ \"./src/start.js\");\n\n\nfunction Footer(Footer){\n\n    Footer.innerHTML = `\n        <div class=${(0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('d-flex-between')}>\n            <span>Version 1.0.3</span>\n            <img class=${(0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('sass_img')} src='./src/images/sass.png' alt='sass logo' />\n        </div>\n        <div class=${(0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('d-flex-between')}>\n            <img class=${(0,_start__WEBPACK_IMPORTED_MODULE_0__.cx)('github_img')} src='./src/images/github.png' alt='github' />\n            <span>Codespaces</span>\n        </div>\n    `\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/Footer.js?");
+
+/***/ }),
+
+/***/ "./src/js/counter.js":
+/*!***************************!*\
+  !*** ./src/js/counter.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   setupCounter: () => (/* binding */ setupCounter)\n/* harmony export */ });\nfunction setupCounter(element) {\n    let counter = 0\n    const setCounter = (count) => {\n      counter = count\n      element.innerHTML = `count is ${counter}`\n    }\n    element.addEventListener('click', () => setCounter(counter + 1))\n    setCounter(0)\n  }\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/counter.js?");
+
+/***/ }),
+
+/***/ "./src/js/es10.js":
+/*!************************!*\
+  !*** ./src/js/es10.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ES10: () => (/* binding */ ES10)\n/* harmony export */ });\n\nfunction ES10(){\n\n    // Array.prototype.flat();\n    const arr = [1, [2, 3], [4, [5]]];\n    const flattened = arr.flat();\n    console.log(flattened); // Output: [1, 2, 3, 4, 5]\n\n    // Object.fromEntries();\n    const entries = [['name', 'John'], ['age', 30], ['city', 'New York']];\n    const obj = Object.fromEntries(entries);\n    console.log(obj); // Output: { name: 'John', age: 30, city: 'New York' }\n\n    /* using Dynamic Imports\n         async function loadModule(moduleName) {\n            const module = await import(moduleName);\n            module.someFunction();\n            }\n        loadModule('./myModule.js'); \n    */\n\n}\n\n\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/es10.js?");
+
+/***/ }),
+
+/***/ "./src/js/row.js":
+/*!***********************!*\
+  !*** ./src/js/row.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Rows)\n/* harmony export */ });\n/* harmony import */ var _sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/modules/app.module.scss */ \"./src/sass/modules/app.module.scss\");\n\n\nfunction Rows(rows){\n    rows.innerHTML = `\n        <div class=${_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].box}>\n            <p>supports ES6+</p>\n        </div>\n        <div class=${_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].box}>\n            <p>Modular SCSS</p>\n        </div>\n        <div class=${_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_0__[\"default\"].box}>\n            <p>Web Security Features</p>\n        </div>\n    `\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/js/row.js?");
+
+/***/ }),
+
+/***/ "./src/security/HashCode.js":
+/*!**********************************!*\
+  !*** ./src/security/HashCode.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ UniqueHash)\n/* harmony export */ });\nconst GenerateHashes = new Set();\n\nfunction UniqueHash() {\n    let hash;\n    do {\n        hash = Math.random().toString(36).substring(2);\n    } while (GenerateHashes.has(hash));\n    GenerateHashes.add(hash);\n    return hash;\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/security/HashCode.js?");
+
+/***/ }),
+
+/***/ "./src/security/Render.js":
+/*!********************************!*\
+  !*** ./src/security/Render.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Render)\n/* harmony export */ });\n/* harmony import */ var _js_Footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../js/Footer */ \"./src/js/Footer.js\");\n/* harmony import */ var _js_counter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../js/counter */ \"./src/js/counter.js\");\n/* harmony import */ var _js_row__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../js/row */ \"./src/js/row.js\");\n/* harmony import */ var _HashCode__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HashCode */ \"./src/security/HashCode.js\");\n\n\n\n\n\nfunction Render() {\n    // Get Render's ID\n    const ContainerDOM = document.getElementById('container');\n    const APP = document.getElementById('count');\n    const Row = document.getElementById('rows');\n    const Foot = document.getElementById('footer');\n\n    // Hash Applied\n    window.addEventListener('DOMContentLoaded', () => {\n        ContainerDOM.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n        APP.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n        Row.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n        Foot.id = (0,_HashCode__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n    })\n\n    // Render's the JS Component\n    ;(0,_js_counter__WEBPACK_IMPORTED_MODULE_1__.setupCounter)(APP);\n    (0,_js_row__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(Row);\n    (0,_js_Footer__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(Foot);\n} \n\n//# sourceURL=webpack://standalone-javascript-beta/./src/security/Render.js?");
+
+/***/ }),
+
+/***/ "./src/start.js":
+/*!**********************!*\
+  !*** ./src/start.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   cx: () => (/* binding */ cx),\n/* harmony export */   \"default\": () => (/* binding */ Start)\n/* harmony export */ });\n/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames/bind */ \"./node_modules/classnames/bind.js\");\n/* harmony import */ var classnames_bind__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames_bind__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_es10__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/es10 */ \"./src/js/es10.js\");\n/* harmony import */ var _sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sass/modules/app.module.scss */ \"./src/sass/modules/app.module.scss\");\n/* harmony import */ var _security_Render__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./security/Render */ \"./src/security/Render.js\");\n\n\n\n\n\nconst cx = classnames_bind__WEBPACK_IMPORTED_MODULE_0___default().bind(_sass_modules_app_module_scss__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\nfunction Start(DOM) {\n    // Function here\n    \n    (0,_js_es10__WEBPACK_IMPORTED_MODULE_1__.ES10)();\n \n    DOM.innerHTML = (\n        `\n        <div id='container' class=${cx('d-flex-center-max')}>\n\n            <div class=${cx('d-flex-center-gap-20')}>\n                <a href=\"https://javascript.info/\">\n                <img \n                    class=${cx('js-image')} \n                    src='./src/images/javascript.png' \n                    alt='javascript logo'   \n                /></a>\n                <h1 class=${cx('font-weight-400')}>Standalone - Javascript ES10</h1>\n                <a href=\"https://webpack.js.org/\">\n                    <img class=${cx('webpack-image')} \n                         src='./src/images/webpack.png' \n                         alt='webpack logo'\n                    /></a>\n            </div>\n            <div>\n                <button class=${cx('button-style')} id='count'></button>\n            </div>\n            <div  class=${cx('d-flex-gap-20')} id=\"rows\"></div>\n            <footer class=${cx('footer-abs-between')} id=\"footer\"></footer>\n        \n        </div>\n\n        `\n    )\n\n  ;(0,_security_Render__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(); // Renders all the Element ID's\n}\n\n//# sourceURL=webpack://standalone-javascript-beta/./src/start.js?");
 
 /***/ })
 
