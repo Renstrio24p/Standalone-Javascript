@@ -32,9 +32,9 @@ Make sure you download it right away.
       Windows - https://nodejs.org/dist/v18.16.0/node-v18.16.0-x64.msi
       Mac OS - https://nodejs.org/dist/v18.16.0/node-v18.16.0.pkg
 
-install dependencies
+install Standalone Javascript
 
-      $ npm i
+      $ npx @standalone-stacks/javascript <project name>
 
 to Start your project server
 
