@@ -1,5 +1,5 @@
 {
-  "name": "standalone-javascript-beta",
+  "name": "standalone-javascript",
   "version": "1.0.2",
   "description": "Pure Vanilla JS",
   "main": "./src/index.js",
