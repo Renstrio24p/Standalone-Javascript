@@ -1,0 +1,137 @@
+@import '../mixins.scss';
+
+* {
+	user-select: none;
+}
+
+.d-flex-between {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    padding: 10px;
+}
+
+.d-flex-gap-10 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.font-size-10px {
+    font-size: 10px;
+}
+
+.js-image,
+.webpack-image {
+	will-change: filter;
+    transition: filter 300ms;
+}
+
+.js-image:hover,
+.webpack-image:hover,
+.sass_img:hover {
+    filter: drop-shadow(0 0 2em #e7f700fb);
+
+}
+
+.js-image {
+	width: 10vh;
+}
+
+.webpack-image {
+	width: 20vh;
+}
+
+.sass_img {
+	width: 10vh;
+	padding: 10px;
+}
+
+.d-flex-center-max,
+.d-flex-center-gap-20 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.d-flex-center-max {
+	width: 100%;
+	height: 100vh;
+	background: rgb(255, 255, 255);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 1) 0%,
+		rgb(0, 0, 0) 0%,
+		rgba(234, 255, 0, 1) 95%
+	);
+    flex-direction: column;
+}
+
+.d-flex-center-gap-20 {
+	gap: 20px;
+}
+
+.font-weight-400 {
+	font-weight: 400;
+}
+
+.button-style {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	will-change: filter;
+    transition: filter 300ms;
+}
+
+.button-style:hover {
+	background-color: rgb(236, 236, 127);
+	transition: .5s;
+	filter: drop-shadow(0 0 2em #e7f700fb);
+}
+
+.footer-abs-between {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+.github_img {
+	width: 20vh;
+}
+
+.d-flex-gap-20 {
+	display: flex;
+	gap: 20px;
+	padding: 30px;
+}
+
+.box {
+	background-color: gray;
+	padding: 10px;
+	border-radius: 5px;
+	will-change: filter;
+    transition: filter 300ms;
+}
+
+.box:hover {
+	background-color: rgb(236, 236, 126);
+	transition: .5s;
+	filter: drop-shadow(0 0 2em #e7f700fb);
+}
+
+@media screen and (max-width:760px) {
+	@include Tablet;
+}
+
+@media screen and (max-width:564px) {
+	@include Mobile;
+}
+
+@media  screen and (max-width: 486px) {
+	@include Small-Mobile;
+}
