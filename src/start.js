@@ -21,7 +21,7 @@ export default function Start(DOM) {
                     src='./src/images/javascript.png' 
                     alt='javascript logo'   
                 /></a>
-                <h1 class=${cx('font-weight-400')}>Standalone - Javascript ES10</h1>
+                <h1 class=${cx('font-weight-400')}>Standalone - Javascript</h1>
                 <a href="https://webpack.js.org/">
                     <img class=${cx('webpack-image')} 
                          src='./src/images/webpack.png' 
