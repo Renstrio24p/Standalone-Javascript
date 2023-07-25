@@ -18,13 +18,13 @@ export default function Start(DOM) {
                 <a href="https://javascript.info/">
                 <img 
                     class=${cx('js-image')} 
-                    src='./src/images/javascript.png' 
+                    src='javascript.png' 
                     alt='javascript logo'   
                 /></a>
                 <h1 class=${cx('font-weight-400')}>Standalone - Javascript</h1>
                 <a href="https://webpack.js.org/">
                     <img class=${cx('webpack-image')} 
-                         src='./src/images/webpack.png' 
+                         src='webpack.png' 
                          alt='webpack logo'
                     /></a>
             </div>

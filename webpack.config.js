@@ -14,7 +14,7 @@ module.exports = {
   devServer: {
     port: '4500',
     static: {
-      directory: path.join(__dirname, 'src')
+      directory: path.join(__dirname, 'src/images')
 },
     open: true,
     hot: true,
@@ -45,7 +45,7 @@ module.exports = {
     }),
     new CopyPlugin({
         patterns: [
-          { from: "src", to: "src" },
+          { from: "src/images", to: "./" },
         ],
       }),
   ]
