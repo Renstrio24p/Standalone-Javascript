@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
-import { ES10 } from "./js/es10";
-import styles from './sass/modules/app.module.scss'
+import styles from './assets/sass/modules/app.module.scss'
 import Render from "./security/Render";
+import { ES10 } from "./components/es10";
 
 export const cx = classNames.bind(styles);
 
@@ -18,13 +18,13 @@ export default function Start(DOM) {
                 <a href="https://javascript.info/">
                 <img 
                     class=${cx('js-image')} 
-                    src='javascript.png' 
+                    src='images/javascript.png' 
                     alt='javascript logo'   
                 /></a>
                 <h1 class=${cx('font-weight-400')}>Standalone - Javascript</h1>
                 <a href="https://webpack.js.org/">
                     <img class=${cx('webpack-image')} 
-                         src='webpack.png' 
+                         src='images/webpack.png' 
                          alt='webpack logo'
                     /></a>
             </div>

@@ -1,6 +1,6 @@
-import Footer from "../js/Footer";
-import { setupCounter } from "../js/counter";
-import Rows from "../js/row";
+import Footer from "../components/Footer";
+import { setupCounter } from "../components/counter";
+import Rows from "../components/row";
 import UniqueHash from "./HashCode";
 
 export default function Render() {

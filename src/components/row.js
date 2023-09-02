@@ -1,4 +1,4 @@
-import styles from '../sass/modules/app.module.scss';
+import styles from '../assets/sass/modules/app.module.scss';
 
 export default function Rows(rows){
     rows.innerHTML = `
