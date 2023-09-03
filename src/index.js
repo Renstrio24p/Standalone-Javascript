@@ -1,6 +1,6 @@
 import Start from "./start";
 import './assets/sass/index.scss';
-import UniqueHash from "./security/HashCode";
+import UniqueHash from "./assets/security/HashCode";
 
 
 const DOM = document.querySelector('#app');

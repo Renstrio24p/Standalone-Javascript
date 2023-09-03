@@ -1,9 +1,9 @@
-export function setupCounter(element) {
+export function setupCounter(BTNElement) {
     let counter = 0
     const setCounter = (count) => {
       counter = count
-      element.innerHTML = `count is ${counter}`
+      BTNElement.innerHTML = `count is ${counter}`
     }
-    element.addEventListener('click', () => setCounter(counter + 1))
+    BTNElement.addEventListener('click', () => setCounter(counter + 1))
     setCounter(0)
   }

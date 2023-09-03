@@ -1,7 +1,7 @@
-import Footer from "../components/Footer";
-import { setupCounter } from "../components/counter";
-import Rows from "../components/row";
-import UniqueHash from "./HashCode";
+import Footer from "../../components/Footer";
+import { setupCounter } from "../../components/counter";
+import Rows from "../../components/row";
+import UniqueHash from "../security/HashCode";
 
 export default function Render() {
     // Get Render's ID

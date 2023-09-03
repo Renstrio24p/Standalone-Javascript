@@ -1,47 +1,39 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
+const { execSync } = require('child_process');
+
+execSync('node webpack.test.js');
 
 module.exports = {
   entry: './src/index.js',
   mode: 'development',
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'webpack.bundle.[contenthash].js',
-    clean: true,
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'assets/[name].[contenthash].js',
   },
   target: 'web',
   devServer: {
-    port: '4500',
+    port: 4500,
     static: {
-      directory: path.join(__dirname, 'src/assets'),
+      directory: path.join(__dirname, 'src'),
     },
     open: true,
     hot: true,
     liveReload: true,
   },
   resolve: {
-    extensions: ['.js', '.json'],
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin()],
-    splitChunks: {
-      chunks: 'all',
-    },
+    extensions: ['.js', '.json', '.scss'],
   },
   module: {
     rules: [
       {
-        test: /\.(js)$/,
+        test: /\.js?$/,
         exclude: /node_modules/,
       },
       {
         test: /\.module\.(sa|sc|c)ss$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          'style-loader',
           {
             loader: 'css-loader',
             options: { modules: true },
@@ -58,28 +50,48 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[name].[hash][ext]',
+          filename: 'images/[name].[contenthash][ext]', // Output path for images
         },
       },
       {
         test: /\.(mp4|webm|ogg|ogv)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'videos/[name].[hash][ext]',
+          filename: 'videos/[name].[contenthash][ext]', // Output path for videos
         },
       },
     ],
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 2000,
+      maxSize: 20000,
+      minChunks: 1,
+      maxAsyncRequests: 30,
+      maxInitialRequests: 30,
+      automaticNameDelimiter: '~',
+      enforceSizeThreshold: 50000,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          reuseExistingChunk: true,
+          name: 'vendors',
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true,
+        },
+      },
+    },
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, './', 'index.html'),
+      template: path.join(__dirname, 'index.html'),
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: 'src/assets/images', to: 'images' },
-        // { from: 'src/assets/videos', to: 'videos' }, // Add this line to copy video files
-      ],
-    }),
-    new MiniCssExtractPlugin({ filename: 'styles.[contenthash].css' }),
   ],
 };
+
+// You shouldn't Modify this configuration file for webpack bundler unless you are a tester for webpack js
