@@ -1,8 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpack = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 const path = require('path');
-const { execSync } = require('child_process');
-
-execSync('node webpack.test.js');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,10 +9,18 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'assets/[name].[contenthash].js',
+    // publicPath: '/' // for backend
   },
   target: 'web',
   devServer: {
     port: 4500,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8800', // Proxy Origin 
+        secure: false,
+        changeOrigin: true,
+      }
+    },
     static: {
       directory: path.join(__dirname, 'src'),
     },
@@ -91,6 +98,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.html'),
     }),
+    new CopyWebpack({
+      patterns: [
+        {
+          from: 'src/images', // image directory origin
+          to: 'images', // image directory destination
+        },
+        {
+          from: 'src/videos', // videos directory origin
+          to: 'videos', // videos directory destination
+        },
+      ],
+    }),
+    new Dotenv(),
   ],
 };
 
