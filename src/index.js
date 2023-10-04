@@ -1,8 +1,23 @@
-import Start from "./start";
 import './assets/sass/index.scss';
-import UniqueHash from "./assets/security/HashCode";
+
+// Lazy loads 
+
+const loadStart = async () => {
+    const module = await import('./start');
+    return module.default;
+};
+
+const loadUniqueHash = async () => {
+    const module = await import('./assets/security/hascode');
+    return module.default;
+};
 
 
 const DOM = document.querySelector('#app');
-DOM.id = UniqueHash();
-Start(DOM); // Renders the Element ID
+
+Promise.all([loadStart(), loadUniqueHash()]).then(([Start, UniqueHash]) => {
+    DOM.id = UniqueHash();
+    Start(DOM);
+});
+
+// Typescript Webpack 5.88.1 Lazy loads
