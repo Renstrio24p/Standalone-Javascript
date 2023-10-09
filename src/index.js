@@ -20,4 +20,4 @@ Promise.all([loadStart(), loadUniqueHash()]).then(([Start, UniqueHash]) => {
     Start(DOM);
 });
 
-// Typescript Webpack 5.88.1 Lazy loads
+// Javascript Webpack 5.88.1 Lazy loads

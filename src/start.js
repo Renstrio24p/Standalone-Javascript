@@ -31,7 +31,7 @@ export default async function Start(DOM) {
       </div>
     `;
   
-    const { default: Render } = await import('./assets/render/render');
+    const { default: Render } = await import('./assets/render/Render');
     Render();
   }
   
