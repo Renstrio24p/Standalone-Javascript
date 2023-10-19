@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstandalone_javascript=self.webpackChunkstandalone_javascript||[]).push([[120],{120:(n,e,t)=>{function s(n){let e=0;const t=t=>{e=t,n.innerHTML=`count is ${e}`};n.addEventListener("click",(()=>t(e+1))),t(0)}t.d(e,{setupCounter:()=>s})}}]);
