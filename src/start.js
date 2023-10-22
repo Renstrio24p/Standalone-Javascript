@@ -23,10 +23,10 @@ export default async function Start(DOM) {
               </a>
           </div>
           <div>
-              <button class=${styles['button-style']} id='count'></button>
+              <button class=${styles['button-style']} component='Counter'></button>
           </div>
-          <div  class=${styles['d-flex-gap-20']} id="rows"></div>
-          <footer class=${styles['footer-abs-between']} id="footer"></footer>
+          <div  class=${styles['d-flex-gap-20']} component='Rows'></div>
+          <footer class=${styles['footer-abs-between']} id="footer" component='Footer'></footer>
   
       </div>
     `)
