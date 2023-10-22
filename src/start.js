@@ -1,7 +1,7 @@
 export default async function Start(DOM) {
 
-    const stylesModule = await import('./assets/sass/modules/app.module.scss');
-    const styles = stylesModule.default;
+    // Javascript Lazy load format
+    const {default: styles} = await import('./assets/sass/modules/app.module.scss');
   
     DOM.innerHTML = (`
       <div id='container' class=${styles['d-flex-center-max']}>
