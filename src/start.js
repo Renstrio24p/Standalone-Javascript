@@ -3,7 +3,7 @@ export default async function Start(DOM) {
     const stylesModule = await import('./assets/sass/modules/app.module.scss');
     const styles = stylesModule.default;
   
-    DOM.innerHTML = `
+    DOM.innerHTML = (`
       <div id='container' class=${styles['d-flex-center-max']}>
   
           <div class=${styles['d-flex-center-gap-20']}>
@@ -29,7 +29,7 @@ export default async function Start(DOM) {
           <footer class=${styles['footer-abs-between']} id="footer"></footer>
   
       </div>
-    `;
+    `)
   
     const { default: Render } = await import('./assets/render/Render');
     Render();
