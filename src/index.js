@@ -1,4 +1,4 @@
-import './assets/sass/index.scss';
+import './assets/css/index.css';
 
 // Lazy loads 
 

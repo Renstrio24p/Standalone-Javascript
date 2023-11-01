@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
 
@@ -132,9 +133,18 @@ module.exports = (env, argv) => {
     ],
     optimization: {
       minimize: isProduction,
+      minimizer: [
+        new TerserPlugin({
+          terserOptions: {
+            compress: {
+              drop_console: isProduction,
+            },
+          },
+        }),
+      ],
       splitChunks: {
-        chunks: 'async',
-        minSize: 244 * 1024, // 244 KiB
+        chunks: 'all', // Split all chunks, including async and initial
+        minSize: 0, // Always split, no matter the size
         cacheGroups: {
           defaultVendors: {
             test: /[\\/]node_modules[\\/]/,
@@ -149,12 +159,15 @@ module.exports = (env, argv) => {
       },
     },
     performance: {
-      maxAssetSize: 244000,
-      maxEntrypointSize: 244000,
+      hints: isProduction ? 'warning' : false,
+      maxAssetSize: 713 * 1024, // Adjust this limit as needed
+      maxEntrypointSize: 713 * 1024, // Adjust this limit as needed
     },
     cache: {
       type: 'filesystem',
     },
     stats: 'errors-warnings',
-  };
+    // Add source maps for better debugging in development mode
+    devtool: isProduction ? 'source-map' : 'eval-source-map',
+  }
 };
