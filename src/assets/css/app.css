@@ -179,3 +179,14 @@ div.js {
         align-items: center;
     }
 }
+
+@media only screen and (max-width:364px) {
+
+    h1.title {
+        font-size: 8vw;
+    }
+
+    .js-div2 {
+        justify-content: center;
+    }
+}

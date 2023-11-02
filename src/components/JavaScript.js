@@ -21,7 +21,7 @@ export default function JavaScript(DOM) {
                 </a>
             </div>
         <div>
-            <h1>Standalone JavaScript</h1>
+            <h1 class='title'>Standalone JavaScript</h1>
         <div class="js-div2">
           <p>Learn Vanilla JS </p>
           <div class="js">
